@@ -1,0 +1,17 @@
+<ng-container>
+  <button
+    type="button"
+    class="todoapp__toggle-all active"
+    data-cy="ToggleAllButton"
+  ></button>
+
+  <form (ngSubmit)="submit()" [formGroup]="todoForm">
+    <input
+      data-cy="NewTodoField"
+      type="text"
+      class="todoapp__new-todo"
+      placeholder="What needs to be done?"
+      formControlName="title"
+    />
+  </form>
+</ng-container>

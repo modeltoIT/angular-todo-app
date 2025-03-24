@@ -1,0 +1,40 @@
+<div data-cy="Todo" class="todo" [class.completed] = "todo.completed">
+  <label class="todo__status-label">
+    <input
+      data-cy="TodoStatus"
+      type="checkbox"
+      class="todo__status"
+      [checked] = "todo.completed"
+      (change)="handleToggleStatus()"
+    />
+  </label>
+
+  <form *ngIf="editing; else titleBlock"  (ngSubmit)="submitTitle()">
+    <input
+      #titleField
+      data-cy="TodoTitleField"
+      type="text"
+      class="todo__title-field"
+      placeholder="Empty todo will be deleted"
+      [value]="todo.title"
+      (change)="changeTitle($event)"
+      (keyup.escape)="save()"
+      (blur)="submitTitle()"
+    />
+  </form>
+
+  <ng-template #titleBlock>
+          <span data-cy="TodoTitle" class="todo__title" (dblclick)="edit()">
+              {{ todo.title }}
+            </span>
+
+    <button type="button" class="todo__remove" data-cy="TodoDelete" (click)="removeTodo()">
+      ×
+    </button>
+  </ng-template>
+
+  <div class="modal overlay" [class.is-active] = "false">
+    <div class="modal-background has-background-white-ter"></div>
+    <div class="loader"></div>
+  </div>
+</div>
