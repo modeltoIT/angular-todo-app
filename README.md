@@ -18,7 +18,7 @@ A dynamic and user-friendly todo application developed with React. It allows use
 
 	1. Open your terminal and run the following command to clone the repository:
 
-        git clone https://github.com/modeltoIT/todo-app.git
+        git clone https://github.com/modeltoIT/angular-todo-app.git
 
 
 	2. Move into the project directory:
@@ -43,7 +43,7 @@ A dynamic and user-friendly todo application developed with React. It allows use
 
 ## View Project
 
-* Live Demo: [View the Project](https://modeltoit.github.io/todo-app/)
+* Live Demo: [View the Project](https://modeltoit.github.io/angular-todo-app/)
 
 ## Preview
 
