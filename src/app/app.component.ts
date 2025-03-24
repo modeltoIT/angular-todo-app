@@ -28,6 +28,8 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit() {
+    this.todosService.getTodos().subscribe();
+
     this.todosService.todos$.subscribe((todos) => {
       this.todos = todos;
     })
