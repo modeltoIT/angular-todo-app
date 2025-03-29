@@ -1,7 +1,7 @@
 # Todo App
 
 ## Description
-A dynamic and user-friendly todo application developed with React. It allows users to add, edit, delete, and filter tasks, with real-time updates and smooth interactions. The app is integrated with an external API to manage tasks. The clean, modern interface is designed for efficiency, offering a pleasant task management experience.
+A dynamic and user-friendly todo application developed with Angular. It allows users to add, edit, delete, and filter tasks, with real-time updates and smooth interactions. The app is integrated with an external API to manage tasks. The clean, modern interface is designed for efficiency, offering a pleasant task management experience.
 
 ## Technologies used
 * HTML5
