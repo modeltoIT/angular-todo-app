@@ -1,59 +1,12 @@
-<div class="todoapp">
-  <h1 class="todoapp__title">todos</h1>
-
-  <div class="todoapp__content">
-    <header class="todoapp__header">
-      <app-add-todo-form [todoForm]="todoForm" (submitForm)="handleFormSubmit()"></app-add-todo-form>
-    </header>
-
-    <section class="todoapp__main" data-cy="TodoList">
-      <app-todo class="todo-list" *ngFor="let todo of todos; let i = index; trackBy: trackByID"
-                [todo]="todo"
-                (updateTitle)="updateTitle(todo, $event)"
-                (toggleStatus)="toggleStatus(todo)"
-                (delete)="handleDelete($event)"
-                [todoForm]="todoForm"
-      ></app-todo>
-    </section>
-
-    <footer class="todoapp__footer" data-cy="Footer">
-          <span class="todo-count" data-cy="TodosCounter">
-            {{ (todos | filterActive).length | numOfActiveTitle }}
-          </span>
-
-      <nav class="filter" data-cy="Filter">
-        <a
-          href="/"
-          class="filter__link selected"
-          data-cy="FilterLinkAll"
-        >
-          All
-        </a>
-
-        <a
-          href="/active"
-          class="filter__link"
-          data-cy="FilterLinkActive"
-        >
-          Active
-        </a>
-
-        <a
-          href="/completed"
-          class="filter__link"
-          data-cy="FilterLinkCompleted"
-        >
-          Completed
-        </a>
-      </nav>
-
-      <button
-        type="button"
-        class="todoapp__clear-completed"
-        data-cy="ClearCompletedButton"
-      >
-        Clear completed
-      </button>
-    </footer>
+<nav class="navbar has-shadow is-white" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="/todos" routerLinkActive="active-tab">
+      Todos
+    </a>
+    <a class="navbar-item" routerLink="/about" routerLinkActive="active-tab">
+      About
+    </a>
   </div>
-</div>
+</nav>
+
+<router-outlet></router-outlet>

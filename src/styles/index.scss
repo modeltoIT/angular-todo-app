@@ -1,10 +1,11 @@
 @use './todoapp';
 @use './todo';
 @use './filter';
+@use "bulma/sass/utilities/css-variables" as cv;
+@use "bulma/sass/themes/light";
 
-
-iframe {
-  display: none;
+@include cv.system-theme($name: "dark") {
+  @include light.light-theme;
 }
 
 body {
@@ -13,14 +14,18 @@ body {
   margin: 0 auto;
 }
 
-.notification {
-  transition-property: opacity, min-height;
-  transition-duration: 1s;
+.error-notification {
+  transition: opacity 1s, min-height 1s;
+  min-height: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.error-notification.show {
+  opacity: 1;
   min-height: 36px;
 }
 
-.notification.hidden {
-  min-height: 0;
-  opacity: 0;
-  pointer-events: none;
+a.active-tab {
+  background-color: rgba(240, 242, 244, 0.8);
 }

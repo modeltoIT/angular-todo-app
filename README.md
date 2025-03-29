@@ -23,7 +23,7 @@ A dynamic and user-friendly todo application developed with React. It allows use
 
 	2. Move into the project directory:
     
-        cd todo-app
+        cd angular-todo-app
 
 
 	3. Ensure that Node.js version v20.x.x is installed. Verify this by running:

@@ -7,7 +7,6 @@ import { Form, FormGroup, ReactiveFormsModule } from "@angular/forms";
     ReactiveFormsModule
   ],
   templateUrl: './add-todo-form.component.html',
-  styleUrl: './add-todo-form.component.scss'
 })
 export class AddTodoFormComponent {
   @Input() todoForm!: FormGroup;

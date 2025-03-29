@@ -19,7 +19,6 @@ import { Todo } from '../../type/todo';
     ReactiveFormsModule
   ],
   templateUrl: './todo.component.html',
-  styleUrl: './todo.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TodoComponent {

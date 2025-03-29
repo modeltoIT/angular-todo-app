@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Todo } from '../type/todo';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable, ReplaySubject, Subject, switchMap, tap, withLatestFrom } from 'rxjs';
+import { BehaviorSubject, tap, withLatestFrom } from 'rxjs';
 
 const USER_ID = 1517;
 const BASE_URL = "https://mate.academy/students-api";
