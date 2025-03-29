@@ -1,0 +1,1 @@
+import{Ba as o,Pa as n,Qa as a,ab as p}from"./chunk-243VPADV.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-about-page"]],decls:2,vars:0,consts:[[1,"mt-3"]],template:function(e,c){e&1&&(n(0,"p",0),p(1,"The page was created to test Angular router"),a())},encapsulation:2})};export{s as AboutPageComponent};
