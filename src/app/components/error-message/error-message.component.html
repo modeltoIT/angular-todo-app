@@ -1,0 +1,14 @@
+<article class="message is-danger error-notification" [class.show]="isError" >
+  <div class="message-header has-text-white">
+    <p>{{title}}</p>
+    <button
+      class="delete"
+      (click)="closeError()"
+    ></button>
+  </div>
+
+  <div class="message-body">
+    {{message}}
+  </div>
+
+</article>
